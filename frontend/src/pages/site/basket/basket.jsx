@@ -33,7 +33,7 @@ const Basket = () => {
       <td>{item.price}</td>
       <td>{item.count}</td>
       <td>{item.totalPrice}</td>
-      <td><button className='btn btn-danger'>Delete</button></td>
+      <td><button  className='btn btn-danger'>Delete</button></td>
       <td><button className='btn btn-warning'>Add</button></td>
 
     </tr>

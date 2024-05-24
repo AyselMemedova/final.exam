@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import Basket from "../../pages/site/basket/basket";
 
 const Product = () => {
-
-  
   const { data, setdata, basket, setBasket, wishlist, setWishlist } = useContext(MainContext);
 
   const [search, setSearch] = useState("");
@@ -33,15 +31,36 @@ const Product = () => {
     console.log(basket);
   }
 
+  function deleteToBasket (_id) {
+    const target = basketItem.find((x) => x._id ==_id);
+    if (target.count > 1) {
+      target.count -= 1;
+      target.totalPrice -=target.price;
+      setBasketItems([...basketItem]);
+      localStorage.setItem(
+        "basketItems",
+        JSON.stringify([...basketItem.filter((x) => x.id !=_id)])
+      );
+    } else {
+      setBasketItems([...basketItem.filter((x) => x._id ==_id)]);
+
+      localStorage.setItem(
+        "basketItems",
+        JSON.stringify([...basketItem.filter((x) => x.id =_id)])
+      );
+    }
+    setBasketItems([...basketItem])
+    console.log(basketItem);
+  };
 
   function addToWishlist(id) {
-    const target = wishlist.find((x) => x._id ==id)
+    const target = wishlist.find((x) => x._id == id)
     if (target) {
-      const result = wishlist.filter((x) => x._id !=id)
+      const result = wishlist.filter((x) => x._id != id)
       setWishlist(result)
     }
     else {
-      const targetOfDataBase = data.find((x) => x._id ==id)
+      const targetOfDataBase = data.find((x) => x._id == id)
       setWishlist([...wishlist, targetOfDataBase])
     }
 
