@@ -1,0 +1,55 @@
+
+.team_text{
+    margin-top: 90px;
+text-align: center;
+
+    p{
+        font-size: 13px;
+        color: #adb5bd;
+        font-weight: 600;
+    }
+
+    h3{
+        font-size: 40px;
+        color: black;
+        font-weight: 900;
+    }
+}
+
+
+.card img{
+margin-left: 60px;
+    width: 305px;
+    height: 305px;
+}
+.card{
+border: none;
+text-align: center;
+}
+
+.card_text{
+    text-align: center;
+    margin-top: 10px;
+    h5{
+        font-size: 18px;
+        color: #808080;
+    }
+    span{
+        color: #cccccc;
+        font-size: 12px;
+    }
+    p{
+        font-size: 18px;
+        color: #808080;  
+    }
+}
+
+.card_icon i{
+    padding-top: 13px;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080;
+    color: white;
+}

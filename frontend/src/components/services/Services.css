@@ -1,0 +1,56 @@
+.servis_text{
+    margin-top: 120px;
+    text-align: center;
+    
+        p{
+            font-size: 13px;
+            color: #adb5bd;
+            font-weight: 600;
+        }
+    
+        h3{
+            font-size: 40px;
+            color: black;
+            font-weight: 900;
+        }
+}
+
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#services{
+    color: #f16821;
+    font-size: 40px;
+    border: none;
+    background: none;
+}
+
+.services_card_text{
+    color: #808080;
+    text-align: start;
+    p{
+        width: 270px;
+        font-size: 16px;
+    }
+
+    a{
+        color: #f16821;
+    }
+    h5{
+        margin-top: 70px;
+    }
+}
+
+.services_card_icon{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    margin-top: 70px;
+
+}

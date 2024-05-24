@@ -1,0 +1,50 @@
+.footer_all {
+    margin-top: 200px;
+    height: 880px;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 16px;
+        color: #737373;
+        padding: 10px;
+    }
+    ul{
+        font-size: 16px;
+        color: #737373;
+        padding: 10px;
+        list-style: none;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+
+    i{
+        font-size: 16px;
+
+        color: #737373;
+        margin-right: 10px;
+    }
+
+    img{
+        width: 255px;
+        height: 255px;
+        margin-top: 15px;
+    }
+
+    button{
+        height: 55px;
+        width: 200px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+}
+button:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
